@@ -1,0 +1,86 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-size:14px;
+    font-family: "Microsoft Himalaya";
+}
+
+ul li{
+    list-style: none;
+}
+
+i{
+    font-size: normal;
+}
+
+/**
+清楚浮动
+*/
+.clearf::after{
+    content:"";
+    display: block;
+    clear:both;
+    fonst-size:0;
+    height:0;
+    overflow:hidden;
+    zoom:0;
+}
+
+.header-inner{
+    background-color: #3c3f41;
+}
+/**
+设置左右浮动
+*/
+.fr{
+    float:right;
+}
+.fl{
+    float:left;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+    outline:none;
+}
+
+.menu-list>li{
+    float:left;
+}
+
+.menu-list>li>a{
+    display: block; /*变成块状元素是为了操控大小*/
+    padding:12px 20px;
+}
+
+.menu-list>li.active{
+    background-color: #111;
+}
+
+.menu-list>li>a:hover{/*鼠标悬停*/
+    background-color: #111111;
+}
+
+/*菜单按钮样式修饰*/
+
+.btn{
+    padding:4px 6px;
+    margin: 2px 2px;
+    outline:none;
+    margin-top:5px;
+    margin-right:8px;
+    border-radius:3px;
+    border:1px solid rgba(77, 223, 239, 0.12);
+}
+
+.btn .icon{
+    display: block;
+    width:25px;
+    height:2px;
+    background: #000;
+    margin:4px 0;
+}
+
